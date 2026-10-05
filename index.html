@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EmotionAI | Facial Emotion Recognition</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">🧠</span>
+            Emotion<span>AI</span>
+        </div>
+
+        <div class="nav-text">
+            Facial Emotion Recognition
+        </div>
+
+    </nav>
+
+
+    <!-- MAIN -->
+
+    <main class="main-container">
+
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <div class="hero-badge">
+                ✨ AI-Powered Emotion Analysis
+            </div>
+
+            <h1>
+                Understand Emotions<br>
+                <span>Through Facial Expressions</span>
+            </h1>
+
+            <p>
+                Upload a facial image and let our deep-learning
+                model analyze the expressed emotion.
+            </p>
+
+        </section>
+
+
+        <!-- APPLICATION CARD -->
+
+        <section class="application-card">
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="upload-section">
+
+                <div class="section-heading">
+
+                    <div class="heading-icon">
+                        📷
+                    </div>
+
+                    <div>
+                        <h2>Upload an Image</h2>
+
+                        <p>
+                            Choose a clear facial image
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- UPLOAD BOX -->
+
+                <div class="upload-box" id="uploadBox">
+
+                    <div class="upload-icon">
+                        ☁️
+                    </div>
+
+                    <h3>
+                        Drop your image here
+                    </h3>
+
+                    <p>
+                        or choose an image from your device
+                    </p>
+
+
+                    <input
+                        type="file"
+                        id="imageInput"
+                        accept="image/png, image/jpeg, image/jpg"
+                    >
+
+
+                    <label
+                        for="imageInput"
+                        class="choose-button"
+                    >
+                        📁 Choose Image
+                    </label>
+
+
+                    <small>
+                        JPG, JPEG or PNG
+                    </small>
+
+                </div>
+
+
+                <!-- IMAGE PREVIEW -->
+
+                <div
+                    id="imagePreview"
+                    class="image-preview"
+                ></div>
+
+
+                <!-- ANALYZE BUTTON -->
+
+                <button
+                    id="predictButton"
+                    class="analyze-button"
+                >
+
+                    <span>✨</span>
+                    Analyze Emotion
+
+                </button>
+
+
+                <button
+                    id="clearButton"
+                    class="clear-button"
+                >
+                    Remove Image
+                </button>
+
+            </div>
+
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="result-section">
+
+                <div class="section-heading">
+
+                    <div class="heading-icon">
+                        🎯
+                    </div>
+
+                    <div>
+
+                        <h2>Analysis Result</h2>
+
+                        <p>
+                            AI prediction will appear here
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div id="result">
+
+                    <div class="empty-result">
+
+                        <div class="empty-icon">
+                            😊
+                        </div>
+
+                        <h3>
+                            Ready to Analyze
+                        </h3>
+
+                        <p>
+                            Upload a facial image and click
+                            <strong>Analyze Emotion</strong>
+                            to get your result.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EMOTIONS INFORMATION -->
+
+        <section class="emotion-info">
+
+            <h2>
+                Emotions Our AI Can Recognize
+            </h2>
+
+            <p>
+                The model classifies facial expressions into
+                seven emotion categories.
+            </p>
+
+
+            <div class="emotion-grid">
+
+                <div class="emotion-item">
+                    <span>😠</span>
+                    <strong>Angry</strong>
+                </div>
+
+                <div class="emotion-item">
+                    <span>🤢</span>
+                    <strong>Disgust</strong>
+                </div>
+
+                <div class="emotion-item">
+                    <span>😨</span>
+                    <strong>Fear</strong>
+                </div>
+
+                <div class="emotion-item">
+                    <span>😊</span>
+                    <strong>Happy</strong>
+                </div>
+
+                <div class="emotion-item">
+                    <span>😐</span>
+                    <strong>Neutral</strong>
+                </div>
+
+                <div class="emotion-item">
+                    <span>😢</span>
+                    <strong>Sad</strong>
+                </div>
+
+                <div class="emotion-item">
+                    <span>😲</span>
+                    <strong>Surprise</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                EmotionAI • Deep Learning Facial Emotion Recognition
+            </p>
+
+            <span>
+                Academic Project
+            </span>
+
+        </footer>
+
+
+    </main>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

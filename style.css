@@ -1,0 +1,777 @@
+/* =========================================
+   EMOTIONAI - DARK BLUE PROFESSIONAL THEME
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.20), transparent 30%),
+        radial-gradient(circle at 90% 80%, rgba(56, 189, 248, 0.12), transparent 30%),
+        #0F172A;
+
+    color: #F8FAFC;
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.navbar {
+    width: 100%;
+    padding: 18px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(15, 23, 42, 0.92);
+
+    border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    backdrop-filter: blur(12px);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.logo-icon {
+    margin-right: 6px;
+}
+
+.logo span {
+    color: #38BDF8;
+}
+
+.nav-text {
+    color: #CBD5E1;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.main-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.hero {
+    text-align: center;
+    padding: 70px 20px 50px;
+}
+
+.hero-badge {
+    display: inline-block;
+
+    padding: 9px 18px;
+    margin-bottom: 20px;
+
+    border-radius: 30px;
+
+    background: rgba(37, 99, 235, 0.15);
+    border: 1px solid rgba(56, 189, 248, 0.30);
+
+    color: #38BDF8;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5vw, 60px);
+    line-height: 1.15;
+    color: #F8FAFC;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #38BDF8;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+
+    color: #CBD5E1;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   APPLICATION CARD
+   ========================================= */
+
+.application-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+    background: rgba(30, 41, 59, 0.92);
+
+    border: 1px solid rgba(148, 163, 184, 0.15);
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* =========================================
+   SECTIONS
+   ========================================= */
+
+.upload-section,
+.result-section {
+    background: #111C31;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin-bottom: 22px;
+}
+
+.heading-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: rgba(37, 99, 235, 0.18);
+
+    font-size: 22px;
+}
+
+.section-heading h2 {
+    color: #F8FAFC;
+    font-size: 21px;
+    margin-bottom: 4px;
+}
+
+.section-heading p {
+    color: #94A3B8;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   UPLOAD BOX
+   ========================================= */
+
+.upload-box {
+    min-height: 260px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    border: 2px dashed #334155;
+
+    border-radius: 18px;
+
+    background: rgba(15, 23, 42, 0.55);
+
+    transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+    border-color: #38BDF8;
+
+    background: rgba(37, 99, 235, 0.08);
+}
+
+.upload-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.upload-box h3 {
+    color: #F8FAFC;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.upload-box p {
+    color: #94A3B8;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.upload-box input {
+    display: none;
+}
+
+.choose-button {
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background: #2563EB;
+
+    color: white;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.choose-button:hover {
+    background: #1D4ED8;
+    transform: translateY(-2px);
+}
+
+.upload-box small {
+    color: #64748B;
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   IMAGE PREVIEW
+   ========================================= */
+
+.image-preview {
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    text-align: center;
+
+    background: #0F172A;
+
+    border-radius: 15px;
+
+    border: 1px solid #334155;
+}
+
+.preview-image {
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: auto;
+
+    border-radius: 12px;
+}
+
+
+/* =========================================
+   ANALYZE BUTTON
+   ========================================= */
+
+.analyze-button {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 11px;
+
+    background: linear-gradient(
+        135deg,
+        #2563EB,
+        #38BDF8
+    );
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.30);
+}
+
+.analyze-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 30px rgba(37, 99, 235, 0.40);
+}
+
+.analyze-button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* =========================================
+   CLEAR BUTTON
+   ========================================= */
+
+.clear-button {
+    display: none;
+
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 11px;
+
+    background: transparent;
+
+    border: 1px solid #475569;
+
+    border-radius: 10px;
+
+    color: #CBD5E1;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.clear-button:hover {
+    border-color: #38BDF8;
+    color: #38BDF8;
+}
+
+
+/* =========================================
+   EMPTY RESULT
+   ========================================= */
+
+.empty-result {
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+.empty-icon {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.empty-result h3 {
+    color: #F8FAFC;
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.empty-result p {
+    color: #94A3B8;
+
+    max-width: 350px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   RESULT
+   ========================================= */
+
+.result-card {
+    text-align: center;
+    padding: 25px;
+
+    animation: resultAppear 0.5s ease;
+}
+
+.emotion-icon {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.result-card h2 {
+    color: #38BDF8;
+
+    font-size: 30px;
+
+    margin: 5px 0;
+
+    letter-spacing: 1px;
+}
+
+.confidence {
+    color: #CBD5E1;
+
+    font-size: 17px;
+
+    margin: 10px 0 25px;
+}
+
+.confidence strong {
+    color: #38BDF8;
+}
+
+
+/* =========================================
+   PROBABILITY
+   ========================================= */
+
+.probability-section {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.probability-section h3 {
+    color: #F8FAFC;
+    margin-bottom: 18px;
+}
+
+.probability-row {
+    margin-bottom: 15px;
+}
+
+.probability-label {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 6px;
+
+    color: #CBD5E1;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-transform: capitalize;
+}
+
+.progress-container {
+    width: 100%;
+    height: 9px;
+
+    background: #263449;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #2563EB,
+        #38BDF8
+    );
+
+    border-radius: 20px;
+
+    transition: width 1s ease;
+}
+
+
+/* =========================================
+   LOADING
+   ========================================= */
+
+.loading-box {
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.loading-box h3 {
+    color: #F8FAFC;
+
+    margin-top: 20px;
+
+    font-size: 21px;
+}
+
+.loading-box p {
+    color: #94A3B8;
+
+    margin-top: 8px;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+
+    border: 5px solid #263449;
+
+    border-top: 5px solid #38BDF8;
+
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}
+
+
+/* =========================================
+   ERROR
+   ========================================= */
+
+.error-box {
+    padding: 25px;
+
+    text-align: center;
+
+    color: #FCA5A5;
+
+    background: rgba(127, 29, 29, 0.25);
+
+    border: 1px solid rgba(248, 113, 113, 0.25);
+
+    border-radius: 12px;
+}
+
+
+/* =========================================
+   EMOTION INFORMATION
+   ========================================= */
+
+.emotion-info {
+    text-align: center;
+
+    padding: 70px 10px 40px;
+}
+
+.emotion-info h2 {
+    color: #F8FAFC;
+
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+.emotion-info > p {
+    color: #94A3B8;
+
+    margin-bottom: 30px;
+}
+
+.emotion-grid {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: 12px;
+}
+
+.emotion-item {
+    padding: 20px 10px;
+
+    background: #111C31;
+
+    border: 1px solid rgba(148, 163, 184, 0.12);
+
+    border-radius: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.emotion-item:hover {
+    transform: translateY(-5px);
+
+    border-color: #38BDF8;
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.18);
+}
+
+.emotion-item span {
+    display: block;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+.emotion-item strong {
+    color: #CBD5E1;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    text-align: center;
+
+    padding: 35px 20px 45px;
+
+    color: #64748B;
+
+    font-size: 13px;
+}
+
+footer span {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #475569;
+}
+
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
+@keyframes spin {
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes resultAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .application-card {
+        grid-template-columns: 1fr;
+    }
+
+    .emotion-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .hero {
+        padding: 50px 10px 35px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .application-card {
+        padding: 15px;
+
+        border-radius: 18px;
+    }
+
+    .upload-section,
+    .result-section {
+        padding: 18px;
+    }
+
+    .emotion-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .emotion-info h2 {
+        font-size: 25px;
+    }
+}
